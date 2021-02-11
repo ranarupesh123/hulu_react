@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/hulu_react/static/css/main.d64375ad.chunk.css",
+    "main.js": "/hulu_react/static/js/main.0ab74dcd.chunk.js",
+    "main.js.map": "/hulu_react/static/js/main.0ab74dcd.chunk.js.map",
+    "runtime-main.js": "/hulu_react/static/js/runtime-main.a499515e.js",
+    "runtime-main.js.map": "/hulu_react/static/js/runtime-main.a499515e.js.map",
+    "static/js/2.720f53d4.chunk.js": "/hulu_react/static/js/2.720f53d4.chunk.js",
+    "static/js/2.720f53d4.chunk.js.map": "/hulu_react/static/js/2.720f53d4.chunk.js.map",
+    "index.html": "/hulu_react/index.html",
+    "static/css/main.d64375ad.chunk.css.map": "/hulu_react/static/css/main.d64375ad.chunk.css.map",
+    "static/js/2.720f53d4.chunk.js.LICENSE.txt": "/hulu_react/static/js/2.720f53d4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a499515e.js",
+    "static/js/2.720f53d4.chunk.js",
+    "static/css/main.d64375ad.chunk.css",
+    "static/js/main.0ab74dcd.chunk.js"
+  ]
+}
