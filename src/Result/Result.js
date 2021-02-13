@@ -20,7 +20,7 @@ function Result({ selectedOption }) {
     <div className="result">
       <FlipMove>
         {movies.map((movie) => {
-          return <VideoCard jey={movie.id} movie={movie} />;
+          return <VideoCard key={movie.id} movie={movie} />;
         })}
       </FlipMove>
     </div>

@@ -6,17 +6,24 @@ import LiveTvIcon from "@material-ui/icons/LiveTv";
 import VideoLibraryIcon from "@material-ui/icons/VideoLibrary";
 import SearchIcon from "@material-ui/icons/Search";
 import PersonOutlineIcon from "@material-ui/icons/PersonOutline";
+import { Link } from "react-router-dom";
 
 import "./Header.css";
 
-function Header() {
+function Header({ activeIcon }) {
   return (
     <div class="header">
       <div className="header__icons">
-        <div className="header__icon header__icon--active">
-          <HomeIcon />
-          <p>Home</p>
-        </div>
+        <Link to="/" className="header__link">
+          <div
+            className={`header__icon ${
+              activeIcon === "Home"
+            }?header__icon--active:null`}
+          >
+            <HomeIcon />
+            <p>Home</p>
+          </div>
+        </Link>
         <div className="header__icon">
           <FlashOnIcon />
           <p>Trending</p>
@@ -29,21 +36,29 @@ function Header() {
           <VideoLibraryIcon />
           <p>Collections</p>
         </div>
-        <div className="header__icon">
-          <SearchIcon />
-          <p>Search</p>
-        </div>
+        <Link to="/search" className="header__link">
+          <div
+            className={`header__icon ${
+              activeIcon === "Search"
+            }?header__icon--active:null`}
+          >
+            <SearchIcon />
+            <p>Search</p>
+          </div>
+        </Link>
         <div className="header__icon">
           <PersonOutlineIcon />
           <p>Account</p>
         </div>
       </div>
-      <div className="header__logo">
+
+      <Link to="/">
         <img
           src="https://press.hulu.com/wp-content/uploads/2020/02/hulu-white.png?fit=1280%2C680g"
           alt="logo"
+          className="header__logo"
         />
-      </div>
+      </Link>
     </div>
   );
 }

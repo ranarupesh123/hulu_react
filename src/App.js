@@ -1,19 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
+import Homepage from "./Homepage/Homepage";
+import Search from "./Search/Search";
 import "./App.css";
-import Header from "./Header/Header";
-import Nav from "./Navbar/Nav";
-import Result from "./Result/Result";
-import requests from "./request";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
 function App() {
-  const [selectedOption, setSelectedOption] = useState([
-    requests.fetchTrending,
-  ]);
   return (
     <div className="app">
-      <Header />
-      <Nav setSelectedOption={setSelectedOption} />
-      <Result selectedOption={selectedOption} />
+      <Router>
+        <Switch>
+          <Route path="/search">
+            <Search />
+          </Route>
+          <Route path="/">
+            <Homepage />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

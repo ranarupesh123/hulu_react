@@ -17,7 +17,7 @@
     scrollbar-width: none;  /* Firefox */
   }
 
-.header__logo>img{
+.header__logo{
     object-fit: contain;
     height:70px;
 }
@@ -34,9 +34,7 @@
     font-size:25px;
 }
 
-.header__icon--active>p{
-    display:inline-flex !important;
-}
+
 .header__icon{
     display:flex;
     flex-direction:column;
@@ -55,4 +53,13 @@
 
 .header__icon:hover >p{
     display:inline-flex;
+}
+
+.header__link {
+    color: white;
+    text-decoration: none;
+  }
+
+  .header__icon--active>p{
+    display:inline-flex !important;
 }
